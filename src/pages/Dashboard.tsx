@@ -22,9 +22,9 @@ const Dashboard = () => {
   const [myPrices, setMyPrices] = useState<CropPrice[]>([
     {
       id: "1",
-      crop_name: "Tomatoes",
-      category: "Vegetables",
-      price: 45,
+      crop_name: "Tomatoes / தக்காளி",
+      category: "காய்கறிகள் / Vegetables",
+      price: 35,
       unit: "kg",
       updated_at: new Date().toISOString(),
     },
@@ -83,9 +83,9 @@ const Dashboard = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Farmer Dashboard</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-tamil">விவசாயி பலகை / Farmer Dashboard</h1>
             <p className="text-muted-foreground">
-              Manage your crop prices and reach buyers directly
+              Manage your Tamil Nadu crop prices and reach buyers directly
             </p>
           </div>
 
@@ -135,10 +135,10 @@ const Dashboard = () => {
                     value={newPrice.category}
                     onChange={(e) => setNewPrice({ ...newPrice, category: e.target.value })}
                   >
-                    <option value="Vegetables">Vegetables</option>
-                    <option value="Fruits">Fruits</option>
-                    <option value="Grains">Grains</option>
-                    <option value="Pulses">Pulses</option>
+                    <option value="காய்கறிகள் / Vegetables">காய்கறிகள் / Vegetables</option>
+                    <option value="பழங்கள் / Fruits">பழங்கள் / Fruits</option>
+                    <option value="தானியங்கள் / Grains">தானியங்கள் / Grains</option>
+                    <option value="பருப்புகள் / Pulses">பருப்புகள் / Pulses</option>
                   </select>
                 </div>
                 <div className="space-y-2">

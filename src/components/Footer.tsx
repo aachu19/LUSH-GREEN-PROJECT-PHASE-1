@@ -11,12 +11,15 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Droplets className="h-8 w-8 text-accent" />
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground">KrishiSandhai</span>
-                <span className="text-xs text-muted-foreground">कृषि संधाई</span>
+                <span className="text-lg font-bold text-foreground font-tamil">விவசாய சந்தை</span>
+                <span className="text-xs text-muted-foreground">Vivasaya Santhai</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Empowering farmers with real-time market prices and water resource information.
+              தமிழ்நாடு விவசாயிகளுக்கு நேரடி சந்தை விலைகள் மற்றும் நீர் வள தகவல்கள்
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Empowering Tamil Nadu farmers with real-time market prices and water information
             </p>
           </div>
 
