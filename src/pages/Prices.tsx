@@ -9,12 +9,12 @@ const Prices = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const allPrices = [
-    { id: "1", crop_name: "Tomatoes", category: "Vegetables", price: 45, unit: "kg", farmer: "Ram Singh", location: "Ludhiana" },
-    { id: "2", crop_name: "Potatoes", category: "Vegetables", price: 28, unit: "kg", farmer: "Priya Sharma", location: "Amritsar" },
-    { id: "3", crop_name: "Mangoes", category: "Fruits", price: 120, unit: "kg", farmer: "Suresh Patel", location: "Jalandhar" },
-    { id: "4", crop_name: "Onions", category: "Vegetables", price: 35, unit: "kg", farmer: "Amit Kumar", location: "Patiala" },
-    { id: "5", crop_name: "Apples", category: "Fruits", price: 150, unit: "kg", farmer: "Rajesh Verma", location: "Shimla" },
-    { id: "6", crop_name: "Wheat", category: "Grains", price: 2500, unit: "quintal", farmer: "Gurpreet Singh", location: "Bathinda" },
+    { id: "1", crop_name: "Tomatoes / தக்காளி", category: "காய்கறிகள் / Vegetables", price: 35, unit: "kg", farmer: "முருகன்", location: "கோயம்புத்தூர் / Coimbatore" },
+    { id: "2", crop_name: "Onions / வெங்காயம்", category: "காய்கறிகள் / Vegetables", price: 42, unit: "kg", farmer: "சுரேஷ்", location: "திண்டுக்கல் / Dindigul" },
+    { id: "3", crop_name: "Banana / வாழைப்பழம்", category: "பழங்கள் / Fruits", price: 28, unit: "kg", farmer: "கார்த்திக்", location: "திருச்சி / Trichy" },
+    { id: "4", crop_name: "Rice / அரிசி", category: "தானியங்கள் / Grains", price: 3200, unit: "quintal", farmer: "ராஜன்", location: "தஞ்சாவூர் / Thanjavur" },
+    { id: "5", crop_name: "Brinjal / கத்தரிக்காய்", category: "காய்கறிகள் / Vegetables", price: 32, unit: "kg", farmer: "குமார்", location: "சேலம் / Salem" },
+    { id: "6", crop_name: "Mango / மாம்பழம்", category: "பழங்கள் / Fruits", price: 85, unit: "kg", farmer: "வெங்கடேஷ்", location: "கிருஷ்ணகிரி / Krishnagiri" },
   ];
 
   const filteredPrices = allPrices.filter(price =>
@@ -29,8 +29,9 @@ const Prices = () => {
       <div className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Today's Crop Prices</h1>
-            <p className="text-muted-foreground">Direct prices from farmers, updated daily</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-tamil">இன்றைய பயிர் விலைகள்</h1>
+            <h2 className="text-2xl font-semibold text-foreground mb-2">Today's Crop Prices</h2>
+            <p className="text-muted-foreground">Direct prices from Tamil Nadu farmers, updated daily</p>
           </div>
 
           {/* Search */}

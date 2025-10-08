@@ -88,13 +88,13 @@ const Signup = () => {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <Droplets className="h-12 w-12 text-accent mb-2" />
-          <h1 className="text-2xl font-bold text-foreground">KrishiSandhai</h1>
-          <p className="text-sm text-muted-foreground">कृषि संधाई</p>
+          <h1 className="text-2xl font-bold text-foreground font-tamil">விவசாய சந்தை</h1>
+          <p className="text-sm text-muted-foreground">Vivasaya Santhai</p>
         </div>
 
         {/* Title */}
-        <h2 className="text-2xl font-bold text-center mb-2 text-foreground">Create Farmer Account</h2>
-        <p className="text-center text-muted-foreground mb-6">Join our community of farmers</p>
+        <h2 className="text-2xl font-bold text-center mb-2 text-foreground font-tamil">விவசாயி கணக்கு துவங்கவும்</h2>
+        <p className="text-center text-muted-foreground mb-6">Join Tamil Nadu farmers community</p>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -141,12 +141,12 @@ const Signup = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="location">Location (Village/Town) *</Label>
+              <Label htmlFor="location">Location (Village/Town) * / <span className="font-tamil">இடம்</span></Label>
               <Input
                 id="location"
                 name="location"
                 type="text"
-                placeholder="Your village or town"
+                placeholder="Your Tamil Nadu village or town"
                 value={formData.location}
                 onChange={handleChange}
                 className="h-11"

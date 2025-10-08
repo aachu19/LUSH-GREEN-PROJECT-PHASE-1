@@ -18,7 +18,7 @@ const Chat = () => {
     {
       id: "1",
       role: "assistant",
-      content: "Namaste! I'm your KrishiSandhai assistant. How can I help you today? You can ask me about crop prices, reservoir levels, or farming tips.",
+      content: "வணக்கம்! Vanakkam! I'm your Tamil Nadu farming assistant. நான் உங்களுக்கு எப்படி உதவ முடியும்? How can I help you today? You can ask me about crop prices (விலைகள்), dam water levels (அணை நீர் நிலை), or farming tips in Tamil or English.",
       timestamp: new Date(),
     },
   ]);
@@ -44,16 +44,16 @@ const Chat = () => {
       let response = "";
       const lowerInput = input.toLowerCase();
 
-      if (lowerInput.includes("price") || lowerInput.includes("crop") || lowerInput.includes("rate")) {
-        response = "You can view today's crop prices on the Prices page. Prices are updated daily by farmers directly. For specific crops, you can use the search feature on that page.";
-      } else if (lowerInput.includes("reservoir") || lowerInput.includes("water") || lowerInput.includes("dam")) {
-        response = "Check the Reservoirs page for current water levels. We update reservoir data daily. Good water availability helps with irrigation planning!";
+      if (lowerInput.includes("price") || lowerInput.includes("crop") || lowerInput.includes("rate") || lowerInput.includes("விலை")) {
+        response = "விலைகள் பக்கத்தில் இன்றைய பயிர் விலைகளைப் பார்க்கலாம். Prices page shows today's Tamil Nadu crop prices updated by farmers directly. You can search for specific crops like tomato (தக்காளி), onion (வெங்காயம்), or banana (வாழைப்பழம்).";
+      } else if (lowerInput.includes("reservoir") || lowerInput.includes("water") || lowerInput.includes("dam") || lowerInput.includes("அணை") || lowerInput.includes("நீர்")) {
+        response = "அணைகள் பக்கத்தில் தற்போதைய நீர் நிலையைப் பார்க்கவும். Check Dams page for current water levels in Tamil Nadu dams like Mettur (மேட்டூர்), Vaigai (வைகை), and Papanasam (பாபநாசம்). Updated daily for irrigation planning!";
       } else if (lowerInput.includes("upload") || lowerInput.includes("update") || lowerInput.includes("sell")) {
-        response = "To upload or update crop prices, please sign in to your farmer account and go to the Dashboard. From there, you can add your crops and set prices.";
-      } else if (lowerInput.includes("sign") || lowerInput.includes("account") || lowerInput.includes("register")) {
-        response = "You can create a farmer account by clicking 'Sign Up' in the navigation. It's free and takes just a few minutes! You'll need your basic details and farm information.";
+        response = "உங்கள் பயிர் விலைகளைப் பதிவேற்ற, உள்நுழைந்து Dashboard-க்குச் செல்லவும். Sign in to your farmer account and go to Dashboard to add your crops and set prices for Tamil Nadu buyers.";
+      } else if (lowerInput.includes("sign") || lowerInput.includes("account") || lowerInput.includes("register") || lowerInput.includes("கணக்கு")) {
+        response = "விவசாயி கணக்கு உருவாக்க 'Sign Up' என்பதைக் கிளிக் செய்யவும். Create a Tamil Nadu farmer account - it's free! You need basic details, farm name, and your village/town location.";
       } else {
-        response = "I'm here to help! You can ask me about:\n• Current crop prices\n• Reservoir water levels\n• How to update your prices\n• Creating a farmer account\n• General farming tips";
+        response = "நான் உங்களுக்கு உதவ இங்கே இருக்கிறேன்! I'm here to help! You can ask about:\n\n• பயிர் விலைகள் / Current crop prices (தக்காளி, வெங்காயம், வாழை)\n• அணை நீர் நிலைகள் / Dam water levels (மேட்டூர், வைகை)\n• விலை பதிவேற்றம் / Price updates\n• கணக்கு உருவாக்குதல் / Account creation\n• விவசாய ஆலோசனைகள் / Farming tips for Tamil Nadu";
       }
 
       const assistantMessage: Message = {
@@ -82,9 +82,9 @@ const Chat = () => {
       <div className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Chat Assistant</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-tamil">உதவி சேவை / Chat Assistant</h1>
             <p className="text-muted-foreground">
-              Ask me anything about prices, water resources, or farming advice
+              Ask in Tamil or English about prices, dam levels, or farming advice for Tamil Nadu
             </p>
           </div>
 

@@ -47,13 +47,13 @@ const Login = () => {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <Droplets className="h-12 w-12 text-accent mb-2" />
-          <h1 className="text-2xl font-bold text-foreground">KrishiSandhai</h1>
-          <p className="text-sm text-muted-foreground">कृषि संधाई</p>
+          <h1 className="text-2xl font-bold text-foreground font-tamil">விவசாய சந்தை</h1>
+          <p className="text-sm text-muted-foreground">Vivasaya Santhai</p>
         </div>
 
         {/* Title */}
-        <h2 className="text-2xl font-bold text-center mb-2 text-foreground">Welcome Back</h2>
-        <p className="text-center text-muted-foreground mb-6">Sign in to your farmer account</p>
+        <h2 className="text-2xl font-bold text-center mb-2 text-foreground font-tamil">மீண்டும் வருக</h2>
+        <p className="text-center text-muted-foreground mb-6">Sign in to your Tamil Nadu farmer account</p>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">

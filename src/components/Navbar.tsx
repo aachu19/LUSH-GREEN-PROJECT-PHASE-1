@@ -15,24 +15,24 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Droplets className="h-8 w-8 text-accent" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground">KrishiSandhai</span>
-              <span className="text-xs text-muted-foreground">कृषि संधाई</span>
+              <span className="text-xl font-bold text-foreground font-tamil">விவசாய சந்தை</span>
+              <span className="text-xs text-muted-foreground">Vivasaya Santhai</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <Link to="/" className="text-foreground hover:text-accent transition-colors font-medium">
-              Home
+              <span className="font-tamil">முகப்பு</span> / Home
             </Link>
             <Link to="/prices" className="text-foreground hover:text-accent transition-colors font-medium">
-              Prices
+              <span className="font-tamil">விலை</span> / Prices
             </Link>
             <Link to="/reservoirs" className="text-foreground hover:text-accent transition-colors font-medium">
-              Reservoirs
+              <span className="font-tamil">அணைகள்</span> / Dams
             </Link>
             <Link to="/chat" className="text-foreground hover:text-accent transition-colors font-medium">
-              Chat
+              <span className="font-tamil">உதவி</span> / Help
             </Link>
           </div>
 

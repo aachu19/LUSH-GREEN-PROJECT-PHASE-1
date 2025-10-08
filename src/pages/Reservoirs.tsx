@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 
 const Reservoirs = () => {
   const reservoirs = [
-    { id: "1", name: "Bhakra Dam", capacity: 9340, current: 7850, percent: 84, state: "Punjab" },
-    { id: "2", name: "Indira Sagar", capacity: 12220, current: 9800, percent: 80, state: "Madhya Pradesh" },
-    { id: "3", name: "Sardar Sarovar", capacity: 9500, current: 7125, percent: 75, state: "Gujarat" },
-    { id: "4", name: "Hirakud Dam", capacity: 8136, current: 6509, percent: 80, state: "Odisha" },
-    { id: "5", name: "Nagarjuna Sagar", capacity: 11472, current: 8604, percent: 75, state: "Telangana" },
-    { id: "6", name: "Krishnaraja Sagar", capacity: 1368, current: 1094, percent: 80, state: "Karnataka" },
+    { id: "1", name: "Mettur Dam / மேட்டூர் அணை", capacity: 2648, current: 2250, percent: 85, state: "Salem / சேலம்" },
+    { id: "2", name: "Vaigai Dam / வைகை அணை", capacity: 194, current: 155, percent: 80, state: "Theni / தேனி" },
+    { id: "3", name: "Papanasam Dam / பாபநாசம் அணை", capacity: 218, current: 163, percent: 75, state: "Tirunelveli / திருநெல்வேலி" },
+    { id: "4", name: "Amaravathi Dam / அமராவதி அணை", capacity: 90, current: 72, percent: 80, state: "Tiruppur / திருப்பூர்" },
+    { id: "5", name: "Sathanur Dam / சாத்தனூர் அணை", capacity: 241, current: 181, percent: 75, state: "Tiruvannamalai / திருவண்ணாமலை" },
+    { id: "6", name: "Bhavanisagar Dam / பவானிசாகர் அணை", capacity: 1465, current: 1172, percent: 80, state: "Erode / ஈரோடு" },
   ];
 
   return (
@@ -20,8 +20,9 @@ const Reservoirs = () => {
       <div className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Reservoir Water Levels</h1>
-            <p className="text-muted-foreground">Current water storage across major reservoirs</p>
+            <h1 className="text-3xl font-bold text-foreground mb-2 font-tamil">அணை நீர் நிலைகள்</h1>
+            <h2 className="text-2xl font-semibold text-foreground mb-2">Dam Water Levels</h2>
+            <p className="text-muted-foreground">Current water storage across major Tamil Nadu dams</p>
           </div>
 
           {/* Reservoirs Grid */}
@@ -65,12 +66,13 @@ const Reservoirs = () => {
 
           {/* Info Card */}
           <Card className="mt-8 p-6 bg-accent/5">
-            <h3 className="text-lg font-semibold text-foreground mb-3">Water Conservation Tips</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-2 font-tamil">நீர் சேமிப்பு குறிப்புகள்</h3>
+            <h4 className="text-md font-medium text-foreground mb-3">Water Conservation Tips for Tamil Nadu</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Use drip irrigation to save water and improve crop yields</li>
-              <li>• Monitor soil moisture regularly to avoid over-watering</li>
-              <li>• Plan crop rotation based on water availability</li>
-              <li>• Harvest rainwater during monsoon season</li>
+              <li>• சொட்டு நீர் பாசனத்தைப் பயன்படுத்தவும் / Use drip irrigation to save water and improve yields</li>
+              <li>• மண் ஈரப்பதத்தை தொடர்ந்து கண்காணிக்கவும் / Monitor soil moisture regularly</li>
+              <li>• நீர் கிடைக்கும் தன்மையின் அடிப்படையில் பயிர் சுழற்சி திட்டமிடவும் / Plan crop rotation based on water availability</li>
+              <li>• மழைக்காலத்தில் மழை நீரைச் சேகரிக்கவும் / Harvest rainwater during monsoon</li>
             </ul>
           </Card>
         </div>
