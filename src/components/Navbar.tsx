@@ -15,8 +15,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Droplets className="h-8 w-8 text-accent" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground font-tamil">விவசாய சந்தை</span>
-              <span className="text-xs text-muted-foreground">Vivasaya Santhai</span>
+              <span className="text-xl font-bold text-foreground font-tamil">பசுமை விவசாயி</span>
+              <span className="text-xs text-muted-foreground">Lush Green Farmer</span>
             </div>
           </Link>
 

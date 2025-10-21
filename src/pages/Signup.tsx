@@ -88,8 +88,8 @@ const Signup = () => {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <Droplets className="h-12 w-12 text-accent mb-2" />
-          <h1 className="text-2xl font-bold text-foreground font-tamil">விவசாய சந்தை</h1>
-          <p className="text-sm text-muted-foreground">Vivasaya Santhai</p>
+          <h1 className="text-2xl font-bold text-foreground font-tamil">பசுமை விவசாயி</h1>
+          <p className="text-sm text-muted-foreground">Lush Green Farmer </p>
         </div>
 
         {/* Title */}
