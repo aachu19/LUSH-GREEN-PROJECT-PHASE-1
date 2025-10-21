@@ -11,8 +11,8 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Droplets className="h-8 w-8 text-accent" />
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground font-tamil">விவசாய சந்தை</span>
-                <span className="text-xs text-muted-foreground">Vivasaya Santhai</span>
+                <span className="text-lg font-bold text-foreground font-tamil">பசுமை விவசாயி</span>
+                <span className="text-xs text-muted-foreground">Lush Green Farmer</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -67,11 +67,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>1800-XXX-XXXX</span>
+                <span>99627-95125</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-accent" />
-                <span>support@krishisandhai.in</span>
+                <span>support@lushgreen.in</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-accent" />
@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 KrishiSandhai. Supporting farmers with technology.
+            © 2025 LushGreen. Supporting farmers with technology.
           </p>
         </div>
       </div>
